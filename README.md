@@ -22,18 +22,12 @@ plugins=(
 )
 ```
 
-3. Run exec zsh to take changes into account:
-```
-exec zsh
-```
-
-4. Set the WORKSPACE_PATH environment variable to your own workspace directory that include your repos.
+3. Set the WORKSPACE_PATH environment variable to your own workspace directory that include your repos.
 ```
 export WORKSPACE_PATH=<MY_WORKSPACE>
 ```
 
-The following script adds it to the beginning of .zshrc
-Change <MY_WORKSPACE> to your workspaces path.
+The following script adds it to the beginning of ~/.zshrc. Make sure to change <MY_WORKSPACE> to your workspaces path.
 ```
 echo "export WORKSPACE_PATH=<MY_WORKSPACE>" > ~/.zshrc.tmp
 echo "" >> ~/.zshrc.tmp
@@ -55,6 +49,11 @@ for example:
 ├──repo3
 ├──terraform-repo1
 └──terraform-repo2
+```
+
+4. Run exec zsh to take changes into account:
+```
+exec zsh
 ```
 
 ## Usage Examples
