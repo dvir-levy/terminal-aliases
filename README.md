@@ -7,18 +7,29 @@ Terminal aliases for faster and more convenient work with the terminal. Mainly f
 
 ### ZSH
 
-1. oh-my-zsh
+1. Using [Oh-my-zsh]https://github.com/ohmyzsh/ohmyzsh:
 ```
 git clone https://github.com/dvir-levy/terminal-aliases.git ~/.oh-my-zsh/custom/plugins/terminal-aliases
 ```
-And add terminal-aliases to plugins in .zshrc.
 
-
-2. Set the environment variable to your own workspace directory that include your repos
+2. Activate the plugin in ~/.zshrc:
 ```
-export WORKSPACE_PATH=~/Workspace/my-workspace/
+plugins=(
+  plugin1
+  plugin2
+  ...
+  teminal-aliases)
 ```
 
+3. Run exec zsh to take changes into account:
+```
+exec zsh
+```
+
+4. Set the environment variable to your own workspace directory that include your repos
+```
+echo 'export WORKSPACE_PATH=~/Workspace/my-workspace' >> ~/.zshrc
+```
 
 NOTE: the folders structure should be single workspace with several repos in it.
 for example:
