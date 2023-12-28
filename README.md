@@ -7,7 +7,7 @@ Terminal aliases for faster and more convenient work with the terminal. Mainly f
 
 ### ZSH
 
-1. Using [Oh-my-zsh]https://github.com/ohmyzsh/ohmyzsh:
+1. Using [Oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh):
 ```
 git clone https://github.com/dvir-levy/terminal-aliases.git ~/.oh-my-zsh/custom/plugins/terminal-aliases
 ```
