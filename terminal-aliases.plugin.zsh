@@ -27,11 +27,14 @@ set_cd_aliases() {
 
     # Get a list of all repositories in the workspace path
     all_repositories=("$workspace_path"/*)
-
     # Set aliases for each repository
     for repo in "${all_repositories[@]}"; do
         repo_name=$(basename "$repo")
-        alias "$repo_name"="cd $repo && ls -la"
+        if [[ $repo_name == *terraform* ]]; then
+            alias "$repo_name"="cd $repo && alias tfall='terraform fmt --recursive $WORKSPACE_PATH/$repo_name' && ls -la"
+        else
+            alias "$repo_name"="cd $repo && ls -la"
+        fi
     done
 }
 set_cd_aliases $WORKSPACE_PATH

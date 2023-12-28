@@ -27,9 +27,23 @@ plugins=(
 exec zsh
 ```
 
-4. Set the environment variable to your own workspace directory that include your repos
+4. Set the WORKSPACE_PATH environment variable to your own workspace directory that include your repos.
 ```
-echo 'export WORKSPACE_PATH=~/Workspace/my-workspace' >> ~/.zshrc
+export WORKSPACE_PATH=<MY_WORKSPACE>
+```
+
+The following script adds it to the beginning of .zshrc
+Change <MY_WORKSPACE> to your workspaces path.
+```
+echo "export WORKSPACE_PATH=<MY_WORKSPACE>" > ~/.zshrc.tmp
+echo "" >> ~/.zshrc.tmp
+cat ~/.zshrc >> ~/.zshrc.tmp
+mv ~/.zshrc.tmp ~/.zshrc
+
+echo "# terminal-aliases plugin" > ~/.zshrc.tmp
+echo "" >> ~/.zshrc.tmp
+cat ~/.zshrc >> ~/.zshrc.tmp
+mv ~/.zshrc.tmp ~/.zshrc
 ```
 
 NOTE: the folders structure should be single workspace with several repos in it.
@@ -69,6 +83,10 @@ NOTE: the branch should be main/master and commit changes should be made locally
 gam "added debugging methods"
 ```
 
+5. change directory to a repo and show its content
+```
+repo1
+```
 
 ## License
 
