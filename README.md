@@ -7,7 +7,8 @@ Terminal aliases for faster and more convenient work with the terminal. Mainly f
 
 ### ZSH
 
-1. Using [Oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh):
+Using [Oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh):
+1. Clone this repository in oh-my-zsh's plugins directory:
 ```
 git clone https://github.com/dvir-levy/terminal-aliases.git ~/.oh-my-zsh/custom/plugins/terminal-aliases
 ```
@@ -54,6 +55,13 @@ for example:
 4. Run exec zsh to take changes into account:
 ```
 exec zsh
+```
+
+Using [zplug](https://github.com/zplug/zplug):
+
+1. Add this repo to `~/.zshrc`:
+```
+zplug "dvir-levy/terminal-aliases", as: plugin
 ```
 
 ## Usage Examples
