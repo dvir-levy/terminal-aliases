@@ -1,4 +1,4 @@
-## Usage
+## terminal-aliases
 
 Terminal aliases for faster and more convenient work with the terminal. Mainly focused on git and terraform work.
 
@@ -18,7 +18,8 @@ plugins=(
   plugin1
   plugin2
   ...
-  teminal-aliases)
+  teminal-aliases
+)
 ```
 
 3. Run exec zsh to take changes into account:
@@ -40,7 +41,6 @@ for example:
 ├──repo3
 ├──terraform-repo1
 └──terraform-repo2
-
 ```
 
 ## Usage Examples
@@ -59,7 +59,7 @@ gst
 
 3. Create new GitHub Pull Request
 ```
-newpr delete_temp_lc_rules_datalake_gold SECURITY-357
+newpr my_new_pr_name SECURITY-357
 ```
 NOTE: the branch should be main/master and commit changes should be made locally on master. the alias will makes sure to create new branch and pull request.
 
