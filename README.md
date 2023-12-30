@@ -65,6 +65,7 @@ zplug "dvir-levy/terminal-aliases", as: plugin
 ```
 
 ## Usage Examples
+![Screen Recording 2023-12-30 at 12 48 05](https://github.com/dvir-levy/terminal-aliases/assets/79982395/552f236f-c84e-4dd1-8dab-1f1a1c299e16)
 
 1. git checkout to main/master and pull
 ```
