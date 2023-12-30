@@ -65,6 +65,7 @@ zplug "dvir-levy/terminal-aliases", as: plugin
 ```
 
 ## Usage Examples
+<img width="400" height="250" alt="color picker" src="https://github.com/dvir-levy/terminal-aliases/assets/79982395/a04d81c9-0742-4997-982e-1bb883846d86" />
 
 1. git checkout to main/master and pull
 ```
@@ -93,6 +94,16 @@ gam "added debugging methods"
 5. change directory to a repo and show its content
 ```
 repo1
+```
+
+6. terraform apply
+```
+ta
+```
+
+7. terraform init + terraform plan
+```
+tip
 ```
 
 ## License
