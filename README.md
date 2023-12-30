@@ -95,6 +95,16 @@ gam "added debugging methods"
 repo1
 ```
 
+6. terraform apply
+```
+ta
+```
+
+7. terraform init + terraform plan
+```
+tip
+```
+
 ## License
 
 This repo is licensed under the terms of the MIT Open Source
