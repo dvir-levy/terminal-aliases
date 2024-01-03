@@ -13,7 +13,8 @@ Using [Oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh):
 git clone https://github.com/dvir-levy/terminal-aliases.git ~/.oh-my-zsh/custom/plugins/terminal-aliases
 ```
 
-2. Activate the plugin in ~/.zshrc:
+2. Activate the plugin in ~/.zshrc<br />
+   NOTE: add the plugin last in order so it could overwrite other aliases if any. 
 ```
 plugins=(
   plugin1
@@ -23,7 +24,8 @@ plugins=(
 )
 ```
 
-3. Set the WORKSPACE_PATH environment variable to your own workspace directory that include your repos.
+3. Set the WORKSPACE_PATH environment variable to your own workspace directory that include your repos.<br />
+   NOTE: The environment variable must be set before the plugins call in ~/.zshrc 
 ```
 export WORKSPACE_PATH=<MY_WORKSPACE>
 ```
