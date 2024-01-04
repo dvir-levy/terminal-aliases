@@ -62,7 +62,7 @@ fi
 
 # git
 if has_command git ; then
-    alias gsu='submodule update --init --recursive'
+    alias gsu='git submodule update --init --recursive'
     alias gcm='git checkout $(git_main_branch) && git pull'
     alias gam='function _gam() { git add -A && git commit --verbose -m "$*" && git push; }; _gam' # git add, commit and push all together. run: 'gam "this is commit"'
     alias dlb='stale_branch=$(git branch --show-current) && git checkout $(git_main_branch) && git pull && git branch -d $stale_branch' #delete local branch, checkout main and pull
